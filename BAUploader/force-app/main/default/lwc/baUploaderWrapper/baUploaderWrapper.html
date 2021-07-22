@@ -1,0 +1,11 @@
+<template>
+    <template if:false={networkSelected}>
+        <c-network-dropdown
+          onnetworkselection={handleNetworkSelection}
+        ></c-network-dropdown>
+    </template>
+  
+    <template if:true={networkSelected}>
+      <c-file-upload deal-program={network}></c-file-upload>
+    </template>
+  </template>

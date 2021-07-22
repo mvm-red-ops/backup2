@@ -1,0 +1,15 @@
+<template>
+
+    <div class="slds-align_absolute-center" if:true={options}>
+      <lightning-card icon-name="custom:custom13" title="Select Network" >
+          <lightning-combobox
+          name="progress"
+          value={value}
+          placeholder="Select Network"
+          options={options}
+          onchange={changeHandler}
+          style="padding: 10px;" >
+        </lightning-combobox>
+      </lightning-card>
+    </div>
+  </template>
